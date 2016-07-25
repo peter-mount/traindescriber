@@ -1,0 +1,16 @@
+MODULE = traindescriber
+
+OBJS  = berth/cancel.o \
+	berth/get.o \
+	berth/interpose.o \
+	berth/step.o
+
+OBJS += map/area.o \
+	map/init.o \
+	map/write.o
+
+OBJS += stats/init.o \
+	stats/reset.o \
+	stats/set.o
+
+include ../SubMakefile
